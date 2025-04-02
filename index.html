@@ -46,6 +46,21 @@
     #About {
         background-color:rgb(202, 202, 202) ;
     }
+    #Consoles .nav button.active {
+        background-color:rgb(202, 202, 202) ;
+    }
+    #Consoles .nav button.active {
+        color: #fff;
+        font-weight: bold;
+    }
+    #Consoles .nav button {
+        color: #525151;
+        font-weight: bold;
+    }
+    #Consoles img {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
 </style>
 <body>
     <header class="navbar navbar-expand-lg sticky-top" id="header">
@@ -61,13 +76,13 @@
             <nav class="navbar-collapse collapse justify-content-end" id="Navigation">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item">
-                        <a href="About" class="nav-link active">
+                        <a href="#About" class="nav-link">
                             <i class="bi bi-house-door"></i>
                             About our store
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Consoles" class="nav-link">
+                        <a href="#Consoles" class="nav-link">
                             <i class="bi bi-controller"></i>
                             Consoles
                         </a>
@@ -149,8 +164,45 @@
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio"></nav>
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button class="text-start nav-link text-colored active" data-bs-toggle="tab-content" data-bs-target="" >Ps5</button>
+                            <button class="text-start nav-link text-colored " data-bs-toggle="tab-content" data-bs-target="" >Nintendo switch</button>
+                            <button class="text-start nav-link text-colored " data-bs-toggle="tab-content" data-bs-target="" >Xbox</button>
+                            <button class="text-start nav-link text-colored " data-bs-toggle="tab-content" data-bs-target="" >Retro</button>
+                        </nav>
                     </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Ps5">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Base Ps5</h5>
+                                        <strong>$500</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Base Ps5</h5>
+                                        <strong>$500</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Base Ps5</h5>
+                                        <strong>$500</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Base Ps5</h5>
+                                        <strong>$500</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
