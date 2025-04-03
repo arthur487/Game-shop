@@ -21,7 +21,7 @@
     header .nav-item a:hover {
     color: #fff;
     }
-    header .nav-item .nav-link.active {
+    #header .nav-item .nav-link.active {
         background-color: rgb(202, 202, 202);
     }
     .carousel-item img {
@@ -61,6 +61,19 @@
         border: 1px solid black;
         border-radius: 10px;
     }
+    #Consoles .col-md-3 img {
+        height: 251px;
+    }
+    #Games .nav button.active  {
+        background-color: #525151;
+        border-radius: 10px;
+    }
+    #Games .nav button {
+        color: #ffffff;
+    }
+    #Games {
+        background-color: rgb(202, 202, 202) ;
+    }
 </style>
 <body>
     <header class="navbar navbar-expand-lg sticky-top" id="header">
@@ -88,7 +101,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#Games" class="nav-link">
                             <i class="bi bi-disc"></i>
                             Games
                         </a>
@@ -164,11 +177,11 @@
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button class="text-start nav-link text-colored active" data-bs-toggle="tab-content" data-bs-target="" >Ps5</button>
-                            <button class="text-start nav-link text-colored " data-bs-toggle="tab-content" data-bs-target="" >Nintendo switch</button>
-                            <button class="text-start nav-link text-colored " data-bs-toggle="tab-content" data-bs-target="" >Xbox</button>
-                            <button class="text-start nav-link text-colored " data-bs-toggle="tab-content" data-bs-target="" >Retro</button>
+                        <nav class="nav nav-pills flex-column nav-Consoles">
+                            <button type="button" class="text-start nav-link text-colored active" data-bs-toggle="tab" data-bs-target="#Ps5" >Ps5</button>
+                            <button type="button" class="text-start nav-link text-colored " data-bs-toggle="tab" data-bs-target="#Nintendo" >Nintendo</button>
+                            <button type="button" class="text-start nav-link text-colored " data-bs-toggle="tab" data-bs-target="#Xbox" >Xbox</button>
+                            <button type="button" class="text-start nav-link text-colored " data-bs-toggle="tab" data-bs-target="#Retro" >Retro</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
@@ -182,27 +195,146 @@
                                         <button class="btn btn-secondary ms-4">Cart</button>
                                     </div>
                                     <div class="col-md-3">
-                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
-                                        <h5 class="mt-2">Base Ps5</h5>
+                                        <img src="imgs/pspro.webp" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">ps5 pro</h5>
+                                        <strong>$700</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/ps5spi.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">ps5 spi</h5>
+                                        <strong>$600</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/PS4-Console-wDS4.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Base Ps4</h5>
+                                        <strong>$200</strong>
+                                        <button class="btn btn-secondary ms-4 mb-4">Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Nintendo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="imgs/switch.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">switch</h5>
+                                        <strong>$300</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/oled.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">switch oled</h5>
+                                        <strong>$350</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/lite.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">switch lite</h5>
+                                        <strong>$120</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/2.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">switch 2</h5>
+                                        <strong>$450</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Xbox">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="imgs/xbox1.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Xbox one</h5>
+                                        <strong>$120</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/xboxse.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Xbox special edition</h5>
+                                        <strong>$550</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/xboxx.png" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Xbox series x</h5>
                                         <strong>$500</strong>
                                         <button class="btn btn-secondary ms-4">Cart</button>
                                     </div>
                                     <div class="col-md-3">
-                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
-                                        <h5 class="mt-2">Base Ps5</h5>
-                                        <strong>$500</strong>
+                                        <img src="imgs/xs.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Xbox series s</h5>
+                                        <strong>$280</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Retro">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="imgs/gameboy.webp" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Gameboy Advanced</h5>
+                                        <strong>$75</strong>
                                         <button class="btn btn-secondary ms-4">Cart</button>
                                     </div>
                                     <div class="col-md-3">
-                                        <img src="imgs/ps5.jpeg" alt="" class="w-100 rounded">
-                                        <h5 class="mt-2">Base Ps5</h5>
-                                        <strong>$500</strong>
+                                        <img src="imgs/gamecube.jpeg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Gamecube</h5>
+                                        <strong>$90</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/dslite.webp" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">Ds lite</h5>
+                                        <strong>$50</strong>
+                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="imgs/ps2.jpg" alt="" class="w-100 rounded">
+                                        <h5 class="mt-2">ps2</h5>
+                                        <strong>$90</strong>
                                         <button class="btn btn-secondary ms-4">Cart</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="Games">
+            <div class="container">
+                <h2 class="section-title text-center pt-5">Video Games</h2>
+                <div class="row">
+                <aside class="col-md-3">
+                    <nav class="nav nav-pills nav-Games flex-column">
+                        <button type="button" class="text-center nav-link text-colored active" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        Ps5
+                        </button>
+                    </nav>
+                </aside>
+                <aside class="col-md-3">
+                    <nav class="nav nav-pills nav-Games flex-column">
+                        <button type="button" class="text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        Nintendo
+                        </button>
+                    </nav>
+                </aside>
+                <aside class="col-md-3">
+                    <nav class="nav nav-pills nav-Games flex-column">
+                        <button type="button" class="text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        Xbox
+                        </button>
+                    </nav>
+                </aside>
+                <aside class="col-md-3">
+                    <nav class="nav nav-pills nav-Games flex-column">
+                        <button type="button" class="text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        Retro
+                        </button>
+                    </nav>
+                </aside>
                 </div>
             </div>
         </section>
