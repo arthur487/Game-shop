@@ -74,6 +74,20 @@
     #Games {
         background-color: rgb(202, 202, 202) ;
     }
+    .card {
+        margin-top: 15px;
+    }
+    .card img {
+        height: 414px;
+        width: 414px;
+    }
+    #XboxGames img {
+        height: 636px;
+        width: 636px;
+    } 
+    .card{
+        margin-bottom: 15px;
+    }
 </style>
 <body>
     <header class="navbar navbar-expand-lg sticky-top" id="header">
@@ -107,7 +121,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#Formulario" class="nav-link">
                             <i class="bi bi-envelope"></i>
                             Contact us
                         </a>
@@ -294,7 +308,7 @@
                                         <img src="imgs/ps2.jpg" alt="" class="w-100 rounded">
                                         <h5 class="mt-2">ps2</h5>
                                         <strong>$90</strong>
-                                        <button class="btn btn-secondary ms-4">Cart</button>
+                                        <button class="btn btn-secondary ms-4 mb-4">Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -303,40 +317,197 @@
                 </div>
             </div>
         </section>
-        <section id="Games">
+        <section id="Games" >
             <div class="container">
                 <h2 class="section-title text-center pt-5">Video Games</h2>
-                <div class="row">
-                <aside class="col-md-3">
+                <aside>
                     <nav class="nav nav-pills nav-Games flex-column">
-                        <button type="button" class="text-center nav-link text-colored active" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        <div class="row">
+                        <button type="button" class="col-md-3 text-center nav-link text-colored active" data-bs-toggle="tab" data-bs-target="#Ps5Games">
                         Ps5
                         </button>
-                    </nav>
-                </aside>
-                <aside class="col-md-3">
-                    <nav class="nav nav-pills nav-Games flex-column">
-                        <button type="button" class="text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        <button type="button" class="col-md-3 text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#NintendoGames">
                         Nintendo
                         </button>
-                    </nav>
-                </aside>
-                <aside class="col-md-3">
-                    <nav class="nav nav-pills nav-Games flex-column">
-                        <button type="button" class="text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        <button type="button" class="col-md-3 text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#XboxGames">
                         Xbox
                         </button>
-                    </nav>
-                </aside>
-                <aside class="col-md-3">
-                    <nav class="nav nav-pills nav-Games flex-column">
-                        <button type="button" class="text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#Ps5Games">
+                        <button type="button" class="col-md-3 text-center nav-link text-colored" data-bs-toggle="tab" data-bs-target="#RetroGames">
                         Retro
                         </button>
+                        </div>
                     </nav>
                 </aside>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="Ps5Games">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/ds.webp" alt="">
+                                    <div class="card-body">
+                                        Demon Souls
+                                        <div class="card-text">
+                                            Explore multiple areas with difficult enemies!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/gow.jpeg" alt="">
+                                    <div class="card-body">
+                                        God of war 2018
+                                        <div class="card-text">
+                                            Experience a deep and intriguing story!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/got.jpg" alt="">
+                                    <div class="card-body">
+                                        Ghost of tsushima
+                                        <div class="card-text">
+                                            Fight agaisnt the mongol invasion!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="NintendoGames">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/Botw1.jpg" alt="">
+                                    <div class="card-body">
+                                        Breath of the wild
+                                        <div class="card-text">
+                                            Explore a wide and lively world!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/Mpr.jpg" alt="">
+                                    <div class="card-body">
+                                        Metroid Prime remastered
+                                        <div class="card-text">
+                                            Metroid Prime brought to live with new visuals!
+                                        </div>
+                                        <strong>$40</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/mario.webp" alt="">
+                                    <div class="card-body">
+                                        Mario odyssey
+                                        <div class="card-text">
+                                            Collect moons across a unique and lively levels!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="XboxGames">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/G6.jpg" alt="">
+                                    <div class="card-body">
+                                        Gears of War 6
+                                        <div class="card-text">
+                                            Explore multiple areas with difficult enemies!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/halo.webp" alt="">
+                                    <div class="card-body">
+                                        Halo infinite
+                                        <div class="card-text">
+                                            Experience a superb multiplayer!
+                                        </div>
+                                        <strong>$60</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="RetroGames">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/Ww.jpg" alt="">
+                                    <div class="card-body">
+                                        Wind Waker
+                                        <div class="card-text">
+                                            Explore a vast sea with mysterious dungeons!
+                                        </div>
+                                        <strong>$25</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/GTASABOX.jpg" alt="">
+                                    <div class="card-body">
+                                        San andreas
+                                        <div class="card-text">
+                                            Experience a classic!
+                                        </div>
+                                        <strong>$15</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="rounded" src="./imgs/meele.jpg" alt="">
+                                    <div class="card-body">
+                                        Smash meele
+                                        <div class="card-text">
+                                            Fight agaisnt friends in the definitive Smash game!
+                                        </div>
+                                        <strong>$20</strong>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section id="Formulario">
+            <h2 class="section-title text-center mt-5">
+                Contact Us 
+            </h2>
+            <form>
+
+            </form>
         </section>
     </div> 
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
